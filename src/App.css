@@ -1,8 +1,7 @@
 html,
 body,
 #root {
-  height: 100%;
-  width: 100%;
+
   margin: 0px;
   padding: 0px;
   font-size: 1rem;
@@ -13,7 +12,12 @@ body,
 }
 
 .main-box {
-  margin: auto;
+  margin:  5rem auto;
+  padding:var(--stake-border-radius);
+  border-radius: var(--stake-border-radius);
+  background: var(--card-bg-color);
+  color: #fff;
+  border: 2px solid var(--btn-bg-color);
 }
 
 .title {
@@ -24,23 +28,29 @@ body,
 }
 
 h1 {
-  color: #35636e;
+  color: var(--btn-bg-color);
   text-align: left;
 }
 
-header {
+h2 {
   font-size: 1.5rem;
   padding: 20px;
-  background-color: #35636e;
+  background-color: var(--btn-bg-color);
   color: white;
+}
+.strong_link{
+  color: var(--btn-bg-color);
 }
 
 #dialog {
   display: flex;
   flex-direction: column;
   width: 500px;
-  border: 1px solid #35636e;
+  border: 1px solid var(--btn-bg-color);
   border-radius: 3px;
+}
+.header_img{
+  width: 70px;
 }
 
 #content {
@@ -65,19 +75,21 @@ header {
 .button {
   margin-top: 0px;
   margin-bottom: 5px;
-  color: #35636e;
+  color: #fff;
   font-size: 1rem;
   padding: 15px;
   background-color: white;
   border-radius: 3px;
-  border: solid 2px #35636e;
+  /* border: solid 2px var(--btn-bg-color); */
+  background-color: var(--btn-bg-color);
+  border: none;
+  border-radius: var(--stake-border-radius);
   outline: none;
   cursor: pointer;
   transition: 0.2s;
 }
 .button:hover {
-  color: white;
-  background-color: #35636e;
+ transform: scale(1.1);
 }
 .button:active {
   margin-top: 5px;
@@ -99,7 +111,7 @@ header {
 #public-token-copy:hover {
   border-radius: 3px;
   color: white;
-  background-color: #35636e;
+  background-color: var(--btn-bg-color);
 }
 
 .text-align-center {
@@ -119,7 +131,7 @@ a:hover {
   flex-direction: row;
   justify-content: space-around;
   border: none;
-  color: #35636e;
+  color: var(--btn-bg-color);
   margin: 0px;
   transition: 0.3s;
 }
@@ -128,7 +140,7 @@ a:hover {
   width: 80%;
   padding: 20px;
   margin: 0px 10px;
-  border: solid 1px #35636e;
+  border: solid 1px var(--btn-bg-color);
   border-bottom: none;
   text-align: center;
   border-top-left-radius: 3px;
@@ -137,7 +149,7 @@ a:hover {
 }
 
 #tabs div.active {
-  background-color: #35636e;
+  background-color: var(--btn-bg-color);
   color: white;
 }
 
@@ -153,7 +165,7 @@ a:hover {
   padding: 15px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  border: solid 2px #35636e;
+  border: solid 2px var(--btn-bg-color);
   outline: none;
   font-size: 1rem;
   border-right: none;
@@ -164,7 +176,7 @@ a:hover {
 #transfer-inputs input[type="number"] {
   padding: 15px;
   width: 60px;
-  border: solid 2px #35636e;
+  border: solid 2px var(--btn-bg-color);
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left: none;
